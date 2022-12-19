@@ -1,0 +1,237 @@
+/*header y footer de todos*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(213, 162, 61);
+}
+
+header {
+    background-image: url(./images/imgfondo1.jpg);
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    display:grid;
+    height: auto;
+    
+}
+header img{
+    width: 100px;
+    grid-column: 1/2;
+}
+
+nav{
+    margin-top: 40px;
+    margin-right: 3vw;
+    justify-content: left;
+    grid-column: 2/11;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: right;
+   gap: 15px 5px;
+   flex-wrap: wrap;
+}
+
+nav ul a{
+    border: rgb(10, 2, 0) solid 1px;
+    border-radius: 10px;
+    background-color: rgb(213, 162, 61);
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(10, 2, 0);
+}
+
+
+
+nav ul a:hover{
+    background-color:rgb(255, 218, 6) ;
+        
+}
+
+nav ul a.activo{
+    color:rgb(126, 30, 6) ;
+     
+}
+main h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.platosClasicos{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgb(250, 204, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+.fotos img{
+    width: 100%;
+    height: auto;
+}
+.fotos:hover{
+    border: 1px solid red;
+    transform: rotate(-4deg);
+}
+.pieFoto{
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(219, 0, 219, 0.801);
+    padding: 10px;
+}
+
+
+
+/*Fin sugerencias*/
+
+@media (max-width:600px) {
+    .cartel{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .imagenLocal{
+        width: 100%;
+    }
+    .cartelTexto{
+        width: 100%;
+    }
+
+    .mainIndex {
+        display: grid;
+        grid-template-columns: 100% ;
+       text-align: center;
+    }
+
+    .principal p{
+        margin-top: 10px;
+    }
+
+    .segundo-contenedor {
+        display: grid;
+        grid-template-columns: 100% ;
+       text-align: center;
+      
+    }
+    .contenido-1{
+        max-width: none;
+        margin: 0;
+    }
+   
+}
+/* celular */
+@media (min-width: 700px) and (min-height:1500px) {
+    header img{
+        width: 25vw;
+        grid-column: 1/2;
+    }
+    nav ul a{
+        font-size: 3vw;
+
+    }
+    .mainQS .cartel{
+        font-size: 2vw;
+    }
+    nav{
+        margin-top: 5vw;
+        margin-right: 3vw;
+        justify-content: left;
+        grid-column: 2/11;
+    }
+    .cartel{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .imagenLocal{
+        width: 100%;
+    }
+    .cartelTexto{
+        width: 100%;
+    }
+
+    .mainIndex {
+        display: grid;
+        grid-template-columns: 100% ;
+       text-align: center;
+    }
+    .segundo-contenedor {
+        display: grid;
+        grid-template-columns: 100% ;
+       text-align: center;
+      
+    }
+    .contenido-1{
+        max-width: none;
+        margin: 0;
+    }
+    footer{
+        font-size:large;
+        height: auto;
+    }
+}
+
+
+
+footer{
+    background-color: rgb(213, 162, 61);
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(10, 2, 0);
+    font-size:calc(1.2vh + 1vw);
+    width: auto;
+    height: auto;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    height: calc(7vh + 9vw);
+}
+
+.info ul{
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.info ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(126, 30, 6);
+}
+
+
+.info ul li a:hover{
+    color: black;
+}
+
+.info h4{
+    text-decoration:underline;
+    margin: 5px auto 10px;
+}
+
+.info h4,
+.info p{
+    font-size: 20px;
+    color: rgb(46, 14, 6);
+}
+
+.map{
+    width: 20vw;
+    height: 80%;
+}
