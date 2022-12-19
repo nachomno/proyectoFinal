@@ -6,8 +6,8 @@ for (let i = 0; i < args.length; ++i) {
 }
 console.log(args)
 document.getElementById("txtId").value = parts[0][1]
-document.getElementById("txtNombre").value = parts[1][1]
-document.getElementById("txtDescripcion").value = parts[2][1]
+document.getElementById("txtNombre").value = decodeURIComponent(parts[1][1])
+document.getElementById("txtDescripcion").value = decodeURIComponent(parts[2][1])
 
 
  
